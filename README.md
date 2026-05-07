@@ -206,4 +206,8 @@ streamlit run streamlit_app.py
 
 # 👨‍💻 Author
 
-Shaik
+- [Vali Shaik](https://www.linkedin.com/in/mahaboobvalishaik/) 
+
+## ⭐ Support
+
+If you found this project useful, please ⭐ star the repository!
