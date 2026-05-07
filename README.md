@@ -1,80 +1,121 @@
-# 🚀 Employee Management & Analytics System
+# Employee Management Analytics System
 
-A full-stack Employee Management System built using:
+A full-stack Employee Management and Analytics System built using:
 
 - FastAPI
 - MySQL
 - Streamlit
-- Python
+- Railway Cloud MySQL
+- Render Deployment
 
-The project supports:
-- Employee CRUD operations
-- Employee search
-- Salary analytics
-- Department-wise reporting
-- REST APIs
-- Interactive Streamlit dashboard
+---
+
+# 🚀 Live Deployments
+
+## 🌐 Streamlit Frontend
+https://employee-management-analytics-system.streamlit.app/
+
+## ⚡ FastAPI Backend
+https://employee-management-analytics-system.onrender.com
+
+## 📘 Swagger API Docs
+https://employee-management-analytics-system.onrender.com/docs
 
 ---
 
 # 📌 Features
 
-## ✅ CRUD Operations
+## ✅ Employee Management
 - Add Employee
-- View Employees
-- Update Employee Salary
+- Update Employee
 - Delete Employee
+- Search Employee
 
-## ✅ Analytics APIs
+## ✅ Analytics
 - Top 3 Highest Salaries
 - Department Average Salary
-- Employee Search
+- Employee Attendance Tracking
+- Project Management
 
-## ✅ Frontend Dashboard
-Built using Streamlit for easy interaction with APIs.
+## ✅ Database Features
+- SQL Joins
+- Group By
+- Window Functions
+- Views
+- CTEs
+- Indexes
+
+## ✅ Deployment Features
+- Railway Cloud MySQL
+- Render Backend Deployment
+- Streamlit Frontend Deployment
 
 ---
 
 # 🛠️ Tech Stack
 
-| Technology | Purpose |
-|------------|---------|
+| Technology | Usage |
+|---|---|
 | Python | Backend Logic |
-| FastAPI | REST API Framework |
+| FastAPI | REST API |
 | MySQL | Database |
-| Streamlit | Frontend Dashboard |
-| Requests | API Communication |
-| Python-Dotenv | Environment Variables |
+| Streamlit | Frontend UI |
+| Railway | Cloud Database |
+| Render | Backend Hosting |
+| GitHub | Version Control |
 
 ---
 
 # 📂 Project Structure
 
-```text
-EmployeeAnalytics/
+```bash
+employee-management-analytics-system/
 │
 ├── main.py
 ├── database.py
 ├── employee_routes.py
 ├── streamlit_app.py
-├── .env
 ├── requirements.txt
-└── .gitignore
+├── README.md
+├── .gitignore
+└── .env
 ```
 
 ---
 
-# ⚙️ Setup Instructions
+# ⚙️ Installation
 
 ## 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/your-username/employee-management-analytics-system.git
+git clone https://github.com/YOUR_USERNAME/employee-management-analytics-system.git
 ```
 
 ---
 
-## 2️⃣ Install Dependencies
+## 2️⃣ Create Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+Activate:
+
+### Windows
+
+```bash
+venv\Scripts\activate
+```
+
+### Mac/Linux
+
+```bash
+source venv/bin/activate
+```
+
+---
+
+## 3️⃣ Install Requirements
 
 ```bash
 pip install -r requirements.txt
@@ -82,13 +123,16 @@ pip install -r requirements.txt
 
 ---
 
-## 3️⃣ Create `.env` File
+# 🔐 Environment Variables
+
+Create `.env`
 
 ```env
-DB_HOST=localhost
-DB_USER=root
-DB_PASSWORD=YOUR_PASSWORD
+DB_HOST=your_host
+DB_USER=your_user
+DB_PASSWORD=your_password
 DB_NAME=EmployeeAnalytics
+DB_PORT=your_port
 ```
 
 ---
@@ -99,9 +143,15 @@ DB_NAME=EmployeeAnalytics
 uvicorn main:app --reload
 ```
 
-Swagger API Docs:
+Backend URL:
 
-```text
+```bash
+http://127.0.0.1:8000
+```
+
+Swagger Docs:
+
+```bash
 http://127.0.0.1:8000/docs
 ```
 
@@ -115,43 +165,45 @@ streamlit run streamlit_app.py
 
 ---
 
-# 📊 APIs Implemented
+# 📊 Sample API Endpoints
 
 | Method | Endpoint | Description |
-|--------|----------|-------------|
+|---|---|---|
 | GET | /employees | Get all employees |
-| GET | /employee/{id} | Get employee by ID |
-| POST | /employee | Add employee |
-| PUT | /employee/{id} | Update salary |
-| DELETE | /employee/{id} | Delete employee |
+| POST | /add-employee | Add employee |
+| PUT | /update-employee/{id} | Update employee |
+| DELETE | /delete-employee/{id} | Delete employee |
 | GET | /search/{name} | Search employee |
 | GET | /top-salaries | Top 3 salaries |
 | GET | /department-average | Department average salary |
 
 ---
 
-# 🧠 SQL Concepts Used
+# 📈 SQL Concepts Used
 
-- JOINS
-- GROUP BY
+- Joins
+- Group By
+- Aggregate Functions
 - Window Functions
-- ROW_NUMBER()
-- Aggregations
-- Filtering
-- Advanced Queries
+- CTEs
+- Views
+- Indexes
+- Subqueries
 
 ---
 
-# 📌 Future Improvements
+# 🎯 Learning Outcomes
 
-- JWT Authentication
-- Role-Based Access
-- Docker Deployment
-- Cloud Database
-- Charts & Visualizations
+- Built REST APIs using FastAPI
+- Connected FastAPI with MySQL
+- Performed SQL analytics queries
+- Created Streamlit frontend
+- Deployed cloud database on Railway
+- Deployed backend on Render
+- Deployed frontend on Streamlit Cloud
 
 ---
 
 # 👨‍💻 Author
 
-Developed by ValiShaik
+Shaik
